@@ -9,3 +9,6 @@ WorkingDirectory=/opt/prod/
 ExecStart=/bin/java -jar ./app.jar ./output.txt "Service is working!"
 Restart=on-failure
 RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
